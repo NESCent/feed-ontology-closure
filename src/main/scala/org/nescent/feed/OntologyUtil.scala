@@ -38,15 +38,16 @@ object OntologyUtil {
   def redundantPropertyRestrictionsAsAnnotations(property: OWLObjectProperty, ontology: OWLOntology): Set[OWLAnnotationAssertionAxiom] = {
     val manager = ontology.getOWLOntologyManager
     val annotationProperty = propertyToClassRelation(property)
+    val allClasses = ontology.getClassesInSignature(true)
     val equivalenceAxioms = for {
-      aClass <- ontology.getClassesInSignature(true) if !aClass.isOWLThing && !aClass.isOWLNothing
+      aClass <- allClasses if !aClass.isOWLThing && !aClass.isOWLNothing
     } yield factory.getOWLEquivalentClassesAxiom(classToRestrictionClass(property, aClass), factory.getOWLObjectSomeValuesFrom(property, aClass))
     val equivalences = manager.createOntology(equivalenceAxioms.toSet[OWLAxiom])
     manager.applyChange(new AddImport(equivalences, factory.getOWLImportsDeclaration(ontology.getOntologyID.getOntologyIRI)))
     val reasoner = new ElkReasonerFactory().createReasoner(equivalences)
     val axioms = for {
       aClass <- ontology.getClassesInSignature(true) if !aClass.isOWLThing && !aClass.isOWLNothing
-      subject <- reasoner.getSubClasses(classToRestrictionClass(property, aClass), false).getFlattened if !subject.isOWLThing && !subject.isOWLNothing
+      subject <- reasoner.getSubClasses(classToRestrictionClass(property, aClass), false).getFlattened if !subject.isOWLThing && !subject.isOWLNothing && allClasses.contains(subject)
     } yield factory.getOWLAnnotationAssertionAxiom(annotationProperty, subject.getIRI, aClass.getIRI)
     reasoner.dispose()
     axioms
