@@ -30,7 +30,7 @@ Note: you must have a working Java installation to run this tool.
 If your ontology is large you may need to increase the memory allocated to the tool. You can do this by passing the `-mem` argument, with the desired number in megabytes: `./feed-ontology-closure -mem 2048 input_file.owl output_file.owl`
 
 ##Building
-Building requires the Scala build tool, [sbt](http://www.scala-sbt.org). If you are running Mac OS X and use [Homebrew](http://brew.sh), then you can get sbt via `brew install sbt`.
+Building requires the Scala build tool, [sbt](http://www.scala-sbt.org). If you are running Mac OS X and use [Homebrew](http://brew.sh), then you can get sbt via `brew install sbt`. You don't need to separately install Scala—just sbt.
 
 To package the software for download, run `sbt universal:packageZipTarball`. You can compile and run the code directly within sbt like so:
 
