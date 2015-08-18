@@ -1,30 +1,29 @@
 <classpath>
-  <classpathentry output="target/scala-2.10/classes" kind="src" path="src/main/scala"/>
-  <classpathentry output="target/scala-2.10/classes" kind="src" path="src/main/java"/>
-  <classpathentry output="target/scala-2.10/test-classes" kind="src" path="src/test/scala"/>
-  <classpathentry output="target/scala-2.10/test-classes" kind="src" path="src/test/java"/>
+  <classpathentry kind="src" path="src/main/scala"/>
+  <classpathentry kind="src" path="src/main/java"/>
+  <classpathentry kind="src" path="src/test/scala"/>
+  <classpathentry kind="src" path="src/test/java"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/net.sourceforge.owlapi/owlapi-distribution/bundles/owlapi-distribution-3.5.0.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/net.sourceforge.owlapi/owlapi-apibinding/bundles/owlapi-apibinding-3.5.0.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/net.sourceforge.owlapi/owlapi-api/bundles/owlapi-api-3.5.0.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/net.sourceforge.owlapi/owlapi-impl/bundles/owlapi-impl-3.5.0.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/net.sourceforge.owlapi/owlapi-parsers/bundles/owlapi-parsers-3.5.0.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/net.sourceforge.owlapi/owlapi-oboformat/bundles/owlapi-oboformat-3.5.0.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/net.sourceforge.owlapi/owlapi-tools/bundles/owlapi-tools-3.5.0.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/org.apache.felix/org.osgi.core/bundles/org.osgi.core-1.4.0.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/net.sourceforge.owlapi/owlapi-contract/jars/owlapi-contract-3.5.0.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/org.semanticweb.elk/elk-owlapi/jars/elk-owlapi-0.4.1.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/org.semanticweb.elk/elk-owl-model/jars/elk-owl-model-0.4.1.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/org.semanticweb.elk/elk-owl-implementation/jars/elk-owl-implementation-0.4.1.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/org.semanticweb.elk/elk-util-hashing/jars/elk-util-hashing-0.4.1.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/org.semanticweb.elk/elk-reasoner/jars/elk-reasoner-0.4.1.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/org.semanticweb.elk/elk-util-collections/jars/elk-util-collections-0.4.1.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/org.semanticweb.elk/elk-util-concurrent/jars/elk-util-concurrent-0.4.1.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/org.semanticweb.elk/elk-util-logging/jars/elk-util-logging-0.4.1.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/log4j/log4j/jars/log4j-1.2.14.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/org.semanticweb.elk/elk-util-common/jars/elk-util-common-0.4.1.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/org.semanticweb.elk/elk-util-io/jars/elk-util-io-0.4.1.jar"/>
-  <classpathentry kind="lib" path="/Users/jim/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/net.sourceforge.owlapi/owlapi-distribution/bundles/owlapi-distribution-3.5.0.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/net.sourceforge.owlapi/owlapi-apibinding/bundles/owlapi-apibinding-3.5.0.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/net.sourceforge.owlapi/owlapi-api/bundles/owlapi-api-3.5.0.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/net.sourceforge.owlapi/owlapi-impl/bundles/owlapi-impl-3.5.0.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/net.sourceforge.owlapi/owlapi-parsers/bundles/owlapi-parsers-3.5.0.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/net.sourceforge.owlapi/owlapi-oboformat/bundles/owlapi-oboformat-3.5.0.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/net.sourceforge.owlapi/owlapi-tools/bundles/owlapi-tools-3.5.0.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/org.apache.felix/org.osgi.core/bundles/org.osgi.core-1.4.0.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/net.sourceforge.owlapi/owlapi-contract/jars/owlapi-contract-3.5.0.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/org.semanticweb.elk/elk-owlapi/jars/elk-owlapi-0.4.1.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/org.semanticweb.elk/elk-owl-model/jars/elk-owl-model-0.4.1.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/org.semanticweb.elk/elk-owl-implementation/jars/elk-owl-implementation-0.4.1.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/org.semanticweb.elk/elk-util-hashing/jars/elk-util-hashing-0.4.1.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/org.semanticweb.elk/elk-reasoner/jars/elk-reasoner-0.4.1.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/org.semanticweb.elk/elk-util-collections/jars/elk-util-collections-0.4.1.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/org.semanticweb.elk/elk-util-concurrent/jars/elk-util-concurrent-0.4.1.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/org.semanticweb.elk/elk-util-logging/jars/elk-util-logging-0.4.1.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/log4j/log4j/jars/log4j-1.2.14.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/org.semanticweb.elk/elk-util-common/jars/elk-util-common-0.4.1.jar"/>
+  <classpathentry kind="lib" path="/Users/jbalhoff/.ivy2/cache/org.semanticweb.elk/elk-util-io/jars/elk-util-io-0.4.1.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>
